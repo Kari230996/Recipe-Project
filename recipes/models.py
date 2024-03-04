@@ -39,7 +39,7 @@ class Ingredient(models.Model):
         ('g', 'g'),
         ('kg', 'kg'),
         ('tsp.', 'tsp.'),
-        ('ssp.', 'ssp.'),
+        ('tbsp.', 'tbsp.'),
         ('pc.', 'pc.'),
         ('taste', 'taste')
     ]

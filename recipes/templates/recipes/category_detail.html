@@ -8,7 +8,7 @@
     <div class="container1">
         {% for recipe in recipes %}
             <div class="recipe-card">
-                <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}" class="recipe-image">
+                <a href="{% url 'recipe_detail' recipe.pk %}"><img src="{{ recipe.image.url }}" alt="{{ recipe.title }}" class="recipe-image"></a>
                 <div class="recipe-info">
                     <h3>{{ recipe.title }}</h3>
                     <p class="description">{{ recipe.description|truncatechars:100 }}</p>

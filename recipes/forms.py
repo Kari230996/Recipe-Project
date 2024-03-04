@@ -9,7 +9,17 @@ from django.contrib.auth.models import User
 class IngredientForm(forms.ModelForm):
     class Meta:
         model = Ingredient
-        fields = ['recipe', 'name', 'quantity', 'unit']
+        fields = ['name', 'quantity', 'unit']
+    # widgets = {
+    #     'quantity': forms.TextInput(attrs={'required': False}),
+    #     'unit': forms.TextInput(attrs={'required': False}),
+    # }
+
+    # def __unit__(self, *args, **kwargs):
+    #     super().__init__(*args,**kwargs)
+    #     self.fields['quantity'].required = False
+    #     self.fields['unit'].required = False
+
 
 class RecipeStepForm(forms.ModelForm):
     class Meta:
@@ -17,13 +27,14 @@ class RecipeStepForm(forms.ModelForm):
         fields = ['description', 'image']
 
 class RecipeForm(forms.ModelForm):
+    category = forms.ModelChoiceField(queryset=Category.objects.all()) 
     class Meta:
         model = Recipe
         fields = ['title', 'description', 'cooking_time', 'image', 'category']
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.fields['category'].widget = forms.Select(choices=Recipe.category_choices)
+    # def __init__(self, *args, **kwargs):
+    #     super().__init__(*args, **kwargs)
+    #     self.fields['category'].widget = forms.Select(choices=Recipe.category_choices)
 
 
 IngredientFormSet = inlineformset_factory(Recipe, Ingredient, form=IngredientForm, extra=1)

@@ -61,6 +61,16 @@ h3 {
 
 /* main */
 
+/* Recipe Cards */
+
+
+
+/* Scale the image up a bit when hovering */
+
+
+
+
+
 
 .recipe-card {
     display: flex;
@@ -75,12 +85,15 @@ h3 {
 }
 
 
-
-
 .recipe-image {
     width: 100%; 
     height: auto; 
     border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.recipe-image:hover {
+    transform: scale(1.1);
 }
 
 .recipe-info {
@@ -110,6 +123,13 @@ h3 {
 .recipe-info a:hover {
     color: #f16d7f; 
 }
+
+
+
+
+
+
+
 
 
 body {
