@@ -10,15 +10,7 @@ class IngredientForm(forms.ModelForm):
     class Meta:
         model = Ingredient
         fields = ['name', 'quantity', 'unit']
-    # widgets = {
-    #     'quantity': forms.TextInput(attrs={'required': False}),
-    #     'unit': forms.TextInput(attrs={'required': False}),
-    # }
 
-    # def __unit__(self, *args, **kwargs):
-    #     super().__init__(*args,**kwargs)
-    #     self.fields['quantity'].required = False
-    #     self.fields['unit'].required = False
 
 
 class RecipeStepForm(forms.ModelForm):
