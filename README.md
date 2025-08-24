@@ -1,77 +1,81 @@
-# Итоговая аттестация по программе
+# Final Certification Project
 
-## “Вебразработка на Python”
+## “Web Development with Python”
 
-Уважаемые студенты, перед вами задание для итогового проекта, который вы
-должны выполнить после прохождения курсов “Погружение в Python”,
-“Веб-вёрстка HTML / CSS”, “Фреймворки Flask и FastAPI” и “Фреймворк Django”.
+Dear students, below is the assignment for the final project, which you must complete after finishing the courses *“Python Basics”*, *“HTML/CSS Web Development”*, *“Flask and FastAPI Frameworks”*, and *“Django Framework”*.
 
-Описание итоговой аттестации:
-1) Цель задания: повторить и отработать на практике материал, изученный в ходе
-программы.
-2) Проект включает в себя обязательное задание и дополнительные задания.
-* Обязательное задание необходимо выполнить для получения диплома.
-За него ставится оценка.
-* Дополнительные задание можно выполнить для портфолио и также
-сдать и получить обратную связь. Его выполнение полезно, но не
-влияет на оценку.
-3) Инструменты, которые обязательно нужно использовать для обязательного
-задания: Python, Фреймворк Django
-4) Формат сдачи: ссылка на подписанную и доступную для просмотра копию
-данного шаблона с выполненными заданиями в синих полях. Инструкция.
+---
 
+### Project Description
 
-### Обязательное задание
-Проект “Сайт рецептов” на Django
+1. **Objective:** to review and practice the material learned throughout the program.
+2. The project includes **mandatory** and **optional** tasks.
 
-#### Краткое описание задания
-Используя фреймворк Django создайте сайт, на котором пользователи смогут
-добавлять свои рецепты блюд и просматривать рецепты других пользователей.
-Готовый проект необходимо сдать в виде ссылки на рабочий сайт в сети интернет и
-репозитория с исходным кодом проекта.
-Подробное описание задания
-Создайте проект Django и приложение(я) для сайта рецептов.
+   * The mandatory task must be completed to receive your diploma. It will be graded.
+   * The optional tasks can be completed for your portfolio and submitted for feedback. They are useful but do not affect the grade.
+3. **Tools required for the mandatory task:** Python, Django framework.
+4. **Submission format:** a link to a signed and viewable copy of this template with completed tasks in the designated fields. See instructions.
 
-#### Модели
-Для работы с пользователями используйте встроенного в Django User`a.
-Подготовьте нижеперечисленные модели:
- ● Рецепты:
-* ○ Название
-* ○ Описание
-* ○ Шаги приготовления
-* ○ Время приготовления
-* ○ Изображение
- ○ Автор
-* ○ *другие поля на ваш выбор, например ингредиенты и т.п.
-* ● *Категории рецептов
-○ Название
-* ○ *другие поля на ваш выбор
-* ● *Связующая таблица для связи Рецептов и Категории
-* ○ *обязательные для связи поля
-* ○ *другие поля на ваш выбор
+---
 
-#### Шаблоны
-Подготовьте базовый шаблон проекта и нижеперечисленные дочерние шаблоны:
-* ● Главная с 5 случайными рецептами кратко
-* ● Страница с одним подробным рецептом
-* ● Страницы регистрации, авторизации и выхода пользователя
-* ● Страница добавления/редактирования рецепта
-* ● *другие шаблоны на ваш выбор
+### Mandatory Task
 
+**Project:** *Recipe Website* in Django
 
-#### Формы
-Создайте формы для ввода и редактирования информации (рецептов) в вашем
-проекте. Интегрируйте их в шаблоны.
-Представления
-Создайте представления, которые охватывают весь ваш проект: модели, формы,
-шаблоны.
+#### Task Overview
 
+Using Django, create a website where users can add their own recipes and view recipes from other users. The final project must be submitted as a link to a working deployed website and the repository with the source code.
 
-#### Маршруты
-Подключите маршруты, убедитесь в работоспособности представлений и связанных
-с ними моделей, форм и шаблонов.
-Облачный сервер и наполнение
-Разверните рабочий проект на сервере. Наполните базу данных как минимум пятью
-рецептами.
-*Если вы обучаетесь в группе, обменяйтесь ссылками с одногруппниками.
-Заполните рецептами их сайт, а они заполнят ваш.
+#### Detailed Task Description
+
+Create a Django project and application(s) for the recipe site.
+
+#### Models
+
+Use Django’s built-in `User` model for users.
+Prepare the following models:
+
+* **Recipes**
+
+  * Title
+  * Description
+  * Cooking steps
+  * Cooking time
+  * Image
+  * Author
+  * *Optional: additional fields such as ingredients, etc.*
+* **Recipe Categories** *(optional)*
+
+  * Name
+  * *Optional: additional fields*
+* **Join Table** for Recipes and Categories *(if implemented)*
+
+  * Required linking fields
+  * *Optional: additional fields*
+
+#### Templates
+
+Prepare a base template and the following child templates:
+
+* Home page with 5 random recipes (brief view)
+* Detailed recipe page
+* Registration, login, and logout pages
+* Add/Edit recipe page
+* *Optional: any additional templates of your choice*
+
+#### Forms
+
+Create forms for inputting and editing recipes in your project. Integrate them into templates.
+
+#### Views
+
+Implement views that cover the entire project: models, forms, and templates.
+
+#### Routes
+
+Configure routes, ensuring all views and their related models, forms, and templates work properly.
+
+#### Deployment & Content
+
+Deploy the project on a cloud server. Populate the database with at least 5 recipes.
+*If studying in a group, exchange links with classmates: add recipes to their site, and they add recipes to yours.*
